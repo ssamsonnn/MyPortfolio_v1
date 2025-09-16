@@ -1,0 +1,495 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+/* Hide scrollbar for Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html, body {
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+    height: 100%;   
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+body {
+  background-color: #0d0d0d;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  line-height: 1.6;
+
+  display: flex;
+  flex-direction: column; /* Makes header, main, footer stack */
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.card {
+  background: #181818;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.profile-section {
+  margin: 0;
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff9800;
+}
+/* App Designs Card */
+.app-card {
+  display: flex;
+  align-items: center;
+  background: #181818;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 32px 24px;
+  margin: 32px auto;
+  max-width: 700px;
+  gap: 32px;
+}
+
+.app-image {
+  width: fit-content;
+  object-fit:fill;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  border: 2px solid #ff9800;
+  aspect-ratio: 1/1;
+  background: #222;
+}
+.app-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.app-title {
+  font-size: 1.4rem;
+  color: #ff9800;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+.app-desc {
+  color: #e0e0e0;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+.app-btn {
+  display: inline-block;
+  background: #ff9800;
+  color: #181818;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s;
+}
+.app-btn:hover {
+  background: #ffa733;
+  color: #000;
+}
+  margin-bottom: 0;
+}
+
+.title {
+  color: #f2f2f2;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ff9800;
+  margin-bottom: 0;
+}
+
+
+nav li {
+  margin-left: 20px;
+}
+
+.bio {
+  color: #e0e0e0;
+  font-size: 1.08rem;
+  margin-bottom: 0;
+}
+
+nav a {
+.email {
+  color: #ff9800;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+  color: #9c9c9c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+  border-bottom: 2px solid #ff9800; /* Accent color */
+}
+
+/* Main content */
+main {
+  flex: 1; /* Take up all remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Poppins", serif;
+}
+
+.hero h1 span {
+  color: #ff9800;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #9c9c9c;
+  font-size: 1.1rem;
+}
+
+/* Profile */
+.profile-section {
+  margin: 40px 0;
+}
+
+.profile-img {
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff9800;
+  margin-bottom: 20px;
+}
+
+.profile-info ul {
+  list-style: none;
+}
+
+.profile-info li {
+  margin: 8px 0;
+}
+
+.profile-info a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+.profile-info a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-media-list {
+  margin-top: 20px;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icon {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-media-icon img {
+  width: 36px;
+  height: 36px;
+}
+
+/* Skills */
+.skills {
+  margin: 40px 0;
+}
+
+.skills h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-family: "Poppins", serif;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skills-list span {
+  background: #1a1a1a;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  color: #ff9800;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: "Roboto Mono", monospace;
+  transition: background 0.3s;
+}
+
+.skills-list span:hover {
+  background: #ff9800;
+  color: #000;
+}
+
+/* Projects Section */
+.project-group {
+    margin: 40px 0;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;      /* vertically center buttons & card */
+  justify-content: center;  /* horizontally center the whole group */
+  gap: 20px;                /* space between buttons and card */
+  margin: 20px auto;        /* center container itself */
+}
+/* Make sure cards don't stretch weirdly */
+.project-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center the text under the images */
+.project-card {
+  text-align: center;
+}
+
+.project-image {
+  width: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+.project-card {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  display: none;
+}
+
+.project-card.active {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Slider buttons */
+#prevBtn, #nextBtn {
+  background: transparent;
+  border: 2px solid #ff9800;
+  color: #ff9800;
+  padding: 10px 18px;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+#prevBtn:hover, #nextBtn:hover {
+  background: #ff9800;
+  color: #0d0d0d;
+  transform: scale(1.05);
+}
+
+/* Focus (for accessibility) */
+#prevBtn:focus, #nextBtn:focus {
+  outline: none;
+  box-shadow: 0 0 8px #ff9800;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 0.9rem;
+  color: #9c9c9c;
+}
+
+/* ---------------------- */
+/* RESPONSIVE DESIGN      */
+/* ---------------------- */
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+  header {
+    padding: 16px 24px;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    padding: 32px 24px;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .app-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .app-image {
+    width: 250px;
+    aspect-ratio: auto;
+  }
+
+  .project-image {
+    width: 80%;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .profile-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .skills-list {
+    gap: 8px;
+  }
+
+  .skills-list span {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+
+  /* Slider buttons closer */
+  #prevBtn, #nextBtn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  header {
+    padding: 12px 16px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .project-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .app-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .app-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

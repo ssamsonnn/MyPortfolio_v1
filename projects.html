@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miguel Samson | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="title">Miguel Samson</h2>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="projects-main-content">
+      <h1>My Projects</h1>
+      <section class="project-group">
+        <h2>Poster Designs</h2>
+        <div class="slider-container">
+          <button id="prevBtn">back</button>
+          <div class="project-slider">
+            <div class="project-card active">
+              <img
+                src="./images/mseuf.jpg"
+                alt="Poster Design 1"
+                class="project-image"
+              />
+              <h3 class="project-title">Summer Festival 2023</h3>
+            </div>
+            <div class="project-card">
+              <img
+                src="./images/ghost.jpg"
+                alt="Poster Design 2"
+                class="project-image"
+              />
+              <h3 class="project-title">Poster</h3>
+            </div>
+            <div class="project-card">
+              <img
+                src="./images/robo.jpg"
+                alt="Poster Design 3"
+                class="project-image"
+              />
+              <h3 class="project-title">Trifold Brochure</h3>
+            </div>
+          </div>
+          <button id="nextBtn">next</button>
+        </div>
+      </section>
+      <section class="project-group">
+        <h2>App Designs</h2>
+        <div class="app-card">
+          <img src="./images/pasabuy.jpg" alt="Pasabuy App" class="app-image">
+          <div class="app-info">
+            <h3 class="app-title">Pasabuy App</h3>
+            <p class="app-desc">A user-friendly app for group buying and delivery, designed for seamless transactions and easy navigation.</p>
+            <a class="app-btn" href="https://www.figma.com/proto/4JDdqmzc2FXEKNkXc0QWCX/hci_box?node-id=344-904&p=f&t=VWHfuel0WZ0qNqiR-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=344%3A904&show-proto-sidebar=1" target="_blank">View Prototype</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 Miguel Samson. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
